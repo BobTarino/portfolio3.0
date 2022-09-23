@@ -52,9 +52,10 @@ const Navbar = () => {
             </div>
         </div>
 
-        <div className='fixed left-0 top-0 w-full h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500'></div>
+        <div className='fixed left-0 top-0 w-full h-full bg-gradient-to-r from-cyan-900 to-orange-900 text-white p-10 ease-in duration-500'></div>
     </div>
   );
 }
 
-export default Navbar
+export default Navbar 
+
