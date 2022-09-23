@@ -51,8 +51,17 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-
-        <div className='fixed left-0 top-0 w-full h-full bg-gradient-to-r from-cyan-900 to-orange-900 text-white p-10 ease-in duration-500'></div>
+<div className='md:hidden fixed left-0 top-0 w-full h-full bg-black/70 backdrop-blur'>
+        <div className='fixed left-0 top-0 w-4/5 h-full bg-gradient-to-r from-cyan-900 to-orange-900 text-white p-10 ease-in duration-500'>
+                 <div>
+                    <div className='flex w-full items-center justify-between'>
+                        <Link href='/#home'>
+                            <h2 className='text-3xl font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer'>bobby</h2>
+                        </Link>
+                     </div>
+                </div>
+            </div>
+        </div>
     </div>
   );
 }
