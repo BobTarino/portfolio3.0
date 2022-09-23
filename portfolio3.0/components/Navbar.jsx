@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React from 'react'
 
+import {FaBars, FaTimes, FaTwitch, FaGithub, FaLinkedin} from 'react-icons/fa'
+
 const Navbar = () => {
     
     const links = [
@@ -34,7 +36,7 @@ const Navbar = () => {
                 <h1 className='text-3xl lg:text41 font-bold uppercase underline underline-offset-2 tracking-wider cursor-pointer'>Bobby</h1>
             </Link>
             
-            {/* list items */}
+            {/* menu list items */}
             <div>
                 <ul className='hidden md:flex'>
                     {links.map(({id, link}) => (
@@ -43,8 +45,14 @@ const Navbar = () => {
                         </Link>
                     ))}
                 </ul>
+
+                <div className='md:hidden'>
+                <FaBars size={30} />
+                </div>
             </div>
         </div>
+
+        <div className='fixed left-0 top-0 w-full h-full bg-gradient-to-r from-blue-600 to-cyan-600 text-white p-10 ease-in duration-500'></div>
     </div>
   );
 }
